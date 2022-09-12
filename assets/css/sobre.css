@@ -1,0 +1,16 @@
+.sobre__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sobre__titulo{
+    width: 70%;
+    font-size: 120px;
+    text-align: center;
+}
+
+.sobre__paragrafo{
+    font-size: 24px;
+    text-align: justify;
+    width: 20%;
+}
