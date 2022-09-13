@@ -1,16 +1,26 @@
 .sobre__container{
-    width: 100%;
+    width: 80%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 10%;
+
 }
 .sobre__titulo{
-    width: 70%;
-    font-size: 120px;
+    width: 60%;
+    font-size: 70px;
     text-align: center;
+    color: #474747;
+    text-shadow: 4px 4px 4px black;
 }
 
 .sobre__paragrafo{
     font-size: 24px;
     text-align: justify;
-    width: 20%;
+    
+    
+}
+
+.sobre__container-paragrafos{
+    padding: 80px 20px 0 20px;
+    width: 100%;
 }
