@@ -1,26 +1,27 @@
 .sobre__container{
+    
     width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: 2rem 10%;
+    flex-direction: column;
+    margin: 0 10% 5% 10%;
+    align-items: center;
 
 }
 .sobre__titulo{
-    width: 60%;
-    font-size: 70px;
+    font-size: 90px;
     text-align: center;
-    color: #474747;
-    text-shadow: 4px 4px 4px black;
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+    -webkit-text-stroke:#756b5b 0.01px;
 }
 
 .sobre__paragrafo{
     font-size: 24px;
     text-align: justify;
     
-    
 }
 
 .sobre__container-paragrafos{
-    padding: 80px 20px 0 20px;
     width: 100%;
 }

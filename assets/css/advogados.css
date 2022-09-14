@@ -1,0 +1,66 @@
+.advogados{
+    background-color: white;
+}
+
+.advogados__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 10%;
+}
+
+.advogados__titulo-principal{
+    font-size: 70px;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 2rem;
+}
+.advogados__box{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    border: #756b5b 1px solid;
+    border-radius: 50px;
+    padding: 2.5% 2.5%;
+    background-color: #111111;
+}
+.advogados__img{
+    width: 30%;
+    border-radius: 30px;
+    border: #756b5b 3px solid;
+    
+}
+
+.advogados__descricao{
+    width: 60%;
+}
+.advogados__descricao li{
+    margin: 2rem 0;
+}
+.advogado__nome{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+.advogado__paragrafo{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+.advogado__certificacoes{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.advogado__link{
+    text-decoration: none;
+    color:#756b5b;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}

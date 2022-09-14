@@ -25,13 +25,15 @@ width: 100%;
     height: 250px;
     background-color: #000000;
     border-radius: 50%;
+    border: #756b5b 1px solid;
 }
 .banner__titulo{
     font-size: 140px;
-    font-family: 'Poppins', sans-serif;
-    color: #929292;
-    text-shadow: 4px 4px 4px black;
+    font-family: 'Roboto Slab', serif;
+    color: #756b5b;
+    text-shadow: 5px 5px 3px black;
     width: 30%;
+    -webkit-text-stroke:#000000 0.1px;
     
     
     
