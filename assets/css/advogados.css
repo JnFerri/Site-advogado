@@ -1,18 +1,19 @@
 .advogados{
-    background-color: white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2560' height='2000' preserveAspectRatio='none' viewBox='0 0 2560 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1913%26quot%3b)' fill='none'%3e%3crect width='2560' height='2000' x='0' y='0' fill='url(%23SvgjsLinearGradient1914)'%3e%3c/rect%3e%3cpath d='M1052.07 2329.11C1347.65 2293.26 1391.23 1734.05 2014.74 1627.85 2638.24 1521.65 2649.14 761.28 2977.4 687.85' stroke='rgba(75%2c 63%2c 40%2c 0.78)' stroke-width='2'%3e%3c/path%3e%3cpath d='M841.18 2127.31C1199.67 2063.69 1263.37 1255.43 1940.18 1171.67 2616.99 1087.91 2719.65 536.38 3039.18 511.67' stroke='rgba(75%2c 63%2c 40%2c 0.78)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1464.23 2008.13C1684.03 1797.64 1534.83 892.89 1906.24 873.9 2277.65 854.91 2541.49 1320.41 2790.26 1333.9' stroke='rgba(75%2c 63%2c 40%2c 0.78)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1294.83 2315.92C1660.86 2122.36 1679.16 927.03 2161.37 904.45 2643.58 881.87 2771.06 1440.79 3027.91 1464.45' stroke='rgba(75%2c 63%2c 40%2c 0.78)' stroke-width='2'%3e%3c/path%3e%3cpath d='M352.86 2123.32C676.55 2122.24 923.96 1908.99 1624.68 1880.54 2325.4 1852.09 2504.19 989.69 2896.5 940.54' stroke='rgba(75%2c 63%2c 40%2c 0.78)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1913'%3e%3crect width='2560' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1914'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.18'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+
 }
 
 .advogados__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem 10%;
+    margin: 0 10%;
 }
 
 .advogados__titulo-principal{
     font-size: 70px;
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'Roboto Slab', serif;
     margin-left: 2rem;
 }
@@ -34,6 +35,10 @@
 
 .advogados__descricao{
     width: 60%;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   justify-content: space-between;
 }
 .advogados__descricao li{
     margin: 2rem 0;
@@ -63,4 +68,25 @@
     color:#756b5b;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+}
+
+.advogado__whats{
+    text-decoration: none;
+    font-size: 24px;
+    text-align: bottom;
+    padding: 10px;
+    background-color: #088804;
+    color: black;
+    border-radius: 20px;
+    width: 30%;
+    margin: 0 35%;
+    
+    
+
+}
+
+.advogado__whats-img{
+    width: 22px;
+    
+
 }

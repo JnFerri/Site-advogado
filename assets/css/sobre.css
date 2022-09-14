@@ -9,11 +9,11 @@
 
 }
 .sobre__titulo{
-    font-size: 90px;
+    font-size: 70px;
     text-align: center;
     color: #000000;
     font-family: 'Roboto Slab', serif;
-    -webkit-text-stroke:#756b5b 0.01px;
+    
 }
 
 .sobre__paragrafo{
