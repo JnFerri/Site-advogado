@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/sobre.css">
     <link rel="stylesheet" href="assets/css/atuacao.css">
     <link rel="stylesheet" href="assets/css/advogados.css">
+    <link rel="stylesheet" href="assets/css/avaliacoes.css">
 </head>
 <body>
     <header>
@@ -104,7 +105,7 @@
             
             </div>
         </section>
-
+        <div class="background__svg">
         <section class="advogados">
             <div class="advogados__container">
                 <h2 class="advogados__titulo-principal">Advogados</h2>
@@ -142,25 +143,24 @@
                 </div>
             </div>
         </section>
-            <section class="avaliacões">
-                <h2>Avaliacões dos Nossos Clientes</h2>
-                <div class="avaliacoes" id="avaliacoes">
-                    <div class="avalicao__box">
-                        <a href="https://g.co/kgs/5MZR4M">
-                            <img class='avaliacao__img' src="" alt="">
-                            <div class="avaliacao__descricao">
-                                <h4 class="avaliacao__nome">Fulano</h4>
-                                <p class="avalicao__paragrafo"></p>
-                            </div>
-                        </a>
-                    </div>
+            <section class="avaliacoes">
+                <h2 class="avaliacoes__titulo">Avaliacões dos Nossos Clientes</h2>
+                <div class="avaliacoes__container" >
+                    <div onclick="anteriorAvaliacao()"><img class="botao__avaliacao" src="assets/imagens/icones/seta esq.png" alt=""></div>
+                    <div id="avaliacoes"></div>
+                    <div onclick="proximoAvaliacao()"><img class="botao__avaliacao" src="assets/imagens/icones/seta dir.png" alt=""></div>
 
                 </div>
             </section>
+            </div>
         
     </main>
     <footer>
 
     </footer>
 </body>
+<script src="assets/js/Avaliacao.js"></script>
+<script src="assets/js/ListaAvalicaoes.js"></script>
+<script src="assets/js/AvaliacaoView.js"></script>
+<script src="assets/js/index.js"></script>
 </html>
