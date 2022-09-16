@@ -5,6 +5,14 @@
     background-size: cover;
 }
 
+.contato__titulo-principal{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    padding: 2rem 0 0 0;
+}
+
 .contato__container{
     display: flex;
     margin: 2rem 5%;
@@ -23,6 +31,12 @@
     flex-direction: column;
     width: auto;
     justify-content: space-around;
+}
+
+.formulario__form label{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: white;
 }
 
 .formulario__input{
@@ -62,12 +76,15 @@
 }
 
 .contato__titulo{
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 .contato__paragrafo{
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 .contato__endereco{
+    font-family: 'Poppins', sans-serif;
     color: white;
     margin:10px 0;
 }
