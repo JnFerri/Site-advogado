@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    
 }
 
 .avaliacoes__container{
@@ -38,6 +38,7 @@
     height: 300px;
     border: 1px solid #756b5b;
     border-radius: 30px;
+    background-color: white;
     
 }
 .avaliacao__img{

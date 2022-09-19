@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/advogados.css">
     <link rel="stylesheet" href="assets/css/avaliacoes.css">
     <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/animacoes.css">
 </head>
 <body>
     <header>
@@ -47,12 +48,12 @@
             <div class="banner__img"></div>
             
         </div>
-        <div class="banner__escrita" id="sobre">
+        <div class="banner__escrita" id="sobre" data-anime="left">
             <img src="assets/imagens/Ferri__1_-removebg-preview.png" alt="">
             <h1 class="banner__titulo">Ferri Advocacia</h1>
         </div>
         <section class="sobre" >
-            <div class="sobre__container">
+            <div class="sobre__container" data-anime="right">
                 <h2 class="sobre__titulo">Sobre</h2>
                 <div class="sobre__container-paragrafos">
                     <p class="sobre__paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque laborum doloremque dolorum, soluta, iste quas optio, odio quo provident at error? Molestias maxime eligendi officia dicta, error quaerat recusandae!</p>
@@ -110,7 +111,7 @@
         <section class="advogados" id="advogados">
             <div class="advogados__container">
                 <h2 class="advogados__titulo-principal">Advogados</h2>
-                <div class="advogados__box">
+                <div class="advogados__box" data-anime="left">
                     <img class="advogados__img" src="assets/imagens/pexels-pavel-danilyuk-8112145.jpg" alt="">
                     <div class="advogados__descricao">
                         <h3 class="advogado__nome">Jean Ferri</h3>
@@ -126,7 +127,7 @@
                         </div>
                     </ul>
                 </div>
-                <div class="advogados__box">
+                <div class="advogados__box" data-anime="right">
                 <div class="advogados__descricao" type="none">
                         <h3 class="advogado__nome">Ricardo Menesin</h3>
                         <div>
@@ -144,7 +145,7 @@
                 </div>
             </div>
         </section>
-            <section class="avaliacoes" id="avaliacoesLocal">
+            <section class="avaliacoes" id="avaliacoesLocal" data-anime="left">
                 <h2 class="avaliacoes__titulo">Avaliacões dos Nossos Clientes</h2>
                 <div class="avaliacoes__container" >
                     <div onclick="anteriorAvaliacao()"><img class="botao__avaliacao" src="assets/imagens/icones/seta esq.png" alt=""></div>
@@ -158,7 +159,7 @@
             <section class="contato" id="contato">
                 <h2 class="contato__titulo-principal">Contato</h2>
                 <div class="contato__container">
-                    <div class="formulario">
+                    <div class="formulario" data-anime="left">
                         <form class="formulario__form" method="post" action="/send-email">
                             <label for="name">Nome :</label>
                             <input class="formulario__input" id="nome" type="name" placeholder="Nome">
@@ -169,7 +170,7 @@
                             <input type="submit" class="formulario__submit" value="Enviar Mensagem">
                         </form>
                     </div>
-                    <div class="contato__descricao">
+                    <div class="contato__descricao" data-anime="right">
                         <h3 class="contato__titulo">Atendimento</h3>
                         <p class="contato__paragrafo">Atendimento de segunda a sexta, 08:00h as 11:00h e 13:00h as 18:00h.</p>
                         <h3 class="contato__titulo">Localização</h3>
