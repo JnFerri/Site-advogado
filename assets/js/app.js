@@ -13,7 +13,7 @@ app.get("/send-email", async (req, res) => {
         }
       });
     var message = {
-        from: "noreplay@celke.com.br",
+        from: `${document.getElementById('nome').value}`,
         to: "celke@celke.com",
         subject: "Instrução para recuperar a senha",
         text: "Prezado(a) Cesar. \n\nVocê solicitou alteração de senha.\n\n",
@@ -34,7 +34,7 @@ app.get("/send-email", async (req, res) => {
 
 });
 
-app.listen(8000, () => {
+app.listen(8080, () => {
     console.log("Servidor iniciado na porta 8080: http://localhost:8080");
 });
 
