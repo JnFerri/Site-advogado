@@ -2,7 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
 
-app.get("/send-email", async (req, res) => {
+app.post("/send-email", async (req, res) => {
 
     var transport = nodemailer.createTransport({
         host: "smtp.mailtrap.io",
