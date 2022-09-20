@@ -27,7 +27,7 @@
 }
 
 .header__fix{
-    background: #fff;
+    background: black;
 
    position: fixed;
 
@@ -40,4 +40,24 @@
    z-index: 1;
 
    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+   border-bottom: #756b5b 2px solid;
+   
+}
+
+.header__fix .header__container{
+background-color: black;
+margin: 0;
+}
+
+.header__fix .header__container img{
+    width: 70px;
+    background-color: white;
+    border-radius: 0 30px 0 0;
+    padding: 0 2.5% 0 5%;
+    border: #756b5b 2px solid;
+}
+
+.header__fix .header__link{
+    font-size: 15px;
+    color: white;
 }

@@ -1,7 +1,14 @@
 var header = document.querySelector('header')
+var whats = document.querySelector(".whats__box")
 
 window.onscroll = function headerFix(){
+    if(window.pageYOffset > 0){
     header.className ='header__fix'
+    whats.style.visibility = 'visible'
+    }else {
+        header.className = 'header'
+        whats.style.visibility = 'hidden'
+    }
 }
 
 
