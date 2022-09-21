@@ -22,6 +22,11 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.header__link:hover{
+    color: #b3a38a;
+    
+}
 .header__logo{
     width: 100px;
 }
@@ -60,4 +65,9 @@ margin: 0;
 .header__fix .header__link{
     font-size: 15px;
     color: white;
+    transition: 0.2s;
+}
+
+.header__fix .header__link:hover{
+    color: #756b5b;
 }
