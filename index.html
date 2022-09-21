@@ -166,14 +166,16 @@
                 <h2 class="contato__titulo-principal">Contato</h2>
                 <div class="contato__container">
                     <div class="formulario" data-anime="left">
-                        <form class="formulario__form" method="post" action="/send-email">
+                        <form class="formulario__form" method="post" action="https://formsubmit.co/mirabilis3d@gmail.com">
                             <label for="name">Nome :</label>
-                            <input class="formulario__input" id="nome" type="name" placeholder="Nome">
+                            <input class="formulario__input" id="nome" name="name" type="name" placeholder="Nome">
                             <label for="Email"> Email :</label>
-                            <input class="formulario__input" type="email" placeholder="SeuEmail@email.com">
+                            <input class="formulario__input" id="email" name="email" type="email" placeholder="SeuEmail@email.com">
                             <label for="Mengasem">Mensagem: </label>
-                        <textarea class="formulario__textarea" name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Escreva Sua Mensagem"></textarea>
-                            <input type="submit" class="formulario__submit" value="Enviar Mensagem">
+                        <textarea class="formulario__textarea" name="message" id="mensagem" cols="40" rows="10" placeholder="Escreva Sua Mensagem"></textarea>
+                            <input type="submit"  class="formulario__submit" value="Enviar Mensagem">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://Jnferri.github.io/Site-advogado/contato.html">
                         </form>
                     </div>
                     <div class="contato__descricao" data-anime="right">
@@ -206,4 +208,5 @@
 <script src="assets/js/AvaliacaoView.js"></script>
 <script src="assets/js/Cliente.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/app.js"></script>
 </html>
