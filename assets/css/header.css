@@ -71,3 +71,41 @@ margin: 0;
 .header__fix .header__link:hover{
     color: #756b5b;
 }
+
+@media (max-width:790px){
+    .header__container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .header__logo{
+        margin: 0;
+        padding: 0;
+    }
+    .header__container ul{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    .header__li{
+        padding: 2px 0;
+        border:#756b5b 2px solid;
+        width: 100%;
+       margin: 2px 0;
+    }
+
+    .header__link{
+        text-align: center;
+
+    }
+    .header__fix .header__container img{
+        padding: 0 100%;
+    }
+
+    .header__fix{
+        width: 100%;
+    }
+}

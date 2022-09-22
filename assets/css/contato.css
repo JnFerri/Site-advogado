@@ -88,3 +88,38 @@
     color: white;
     margin:10px 0;
 }
+
+@media (max-width:790px){
+    .contato__container{
+        flex-direction: column;
+    }
+    .contato__descricao{
+        width: 90%;
+        align-items: center;
+    }
+ .formulario{
+    width: 95%;
+    align-items: center;
+ }
+ .formulario__input{
+    width: 95%;
+ }
+ .formulario__textarea{
+    width: 95%;
+ }
+ .formulario__submit{
+    width: 50%;
+    margin: 10px 25%;
+ }
+ 
+ .contato__endereco{
+    width: 95%;
+    text-align: center;
+ }
+ .contato__paragrafo{
+    text-align: center;
+ }
+ .contato__descricao iframe{
+    width: 100%;
+ }
+}

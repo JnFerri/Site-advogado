@@ -38,3 +38,21 @@ width: 100%;
     
     
 }
+
+@media(max-width:798px){
+    .banner__escrita{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner__titulo{
+        font-size: 70px;
+        text-align: center;
+        margin: 0;
+        width: auto;
+    }
+    .banner__escrita img{
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+}
