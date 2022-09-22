@@ -113,6 +113,10 @@
         width: 95%;
         margin: 0;
     }
+
+    .advogado__img-02{
+        order: -2;
+    }
     .advogados__descricao{
         width: 95%;
     }

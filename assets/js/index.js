@@ -44,15 +44,17 @@ listaAvaliacoes.adicionaAvaliacao(avaliacao06)
 avaliacaoView.layout(listaAvaliacoes)
 
 document.onload = avaliacaoView.update()
-
+var i = 0
 function anteriorAvaliacao(){
     avaliacaoView.layout(listaAvaliacoes)
     document.onload = avaliacaoView.update()
+    i--
 }
 
 function proximoAvaliacao(){
     avaliacaoView.layout02(listaAvaliacoes)
     document.onload = avaliacaoView.update()
+    i++
 }
 
 
