@@ -1,14 +1,31 @@
 var header = document.querySelector('header')
 var whats = document.querySelector(".whats__box")
+var imgHeader = document.querySelector("#imgHeader")
+var headerFixul = document.getElementById("headerFixul")
+var headerFixli = document.querySelector('.header__li')
+
+console.log(imgHeader.value)
 
 window.onscroll = function headerFix(){
-    if(window.pageYOffset > 0){
+    if(window.pageYOffset > 0 && window.innerWidth < 798){
+    
     header.className ='header__fix'
     whats.style.visibility = 'visible'
-    }else {
+    imgHeader.innerHTML = `<img src="assets/imagens/icones/menu-hamburguer.png" class='header__logo' alt="Ferri advocacia"></img>`
+        
+    } else {
+        
         header.className = 'header'
         whats.style.visibility = 'hidden'
+        imgHeader.innerHTML = `<img src="assets/imagens/Ferri__1_-removebg-preview.png" class='header__logo' alt="Ferri advocacia">`
     }
+}
+
+function menuBurguer(){
+    imgHeader.addEventListener("click", function() {
+        headerFixul.style.visibility = 'visible'
+        headerFixli.style.position ='relative'
+    })
 }
 
 
