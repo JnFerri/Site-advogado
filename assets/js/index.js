@@ -1,5 +1,4 @@
 let listaAvaliacoes = new ListaAvaliacoes()
-let avaliacaoView = new AvaliacaoView()
 
 let avaliacao01 = new Avaliacao (
     `assets/imagens/imagens clientes/img__1.png`,
@@ -41,21 +40,42 @@ listaAvaliacoes.adicionaAvaliacao(avaliacao03)
 listaAvaliacoes.adicionaAvaliacao(avaliacao04)
 listaAvaliacoes.adicionaAvaliacao(avaliacao05)
 listaAvaliacoes.adicionaAvaliacao(avaliacao06)
-avaliacaoView.layout(listaAvaliacoes)
 
-document.onload = avaliacaoView.update()
-var i = 0
-function anteriorAvaliacao(){
-    avaliacaoView.layout(listaAvaliacoes)
-    document.onload = avaliacaoView.update()
-    i--
-}
+let $ = document.querySelector.bind(document)
+    var localPost = $('#avaliacoes')
+    var botao = $('#botaoAvaliacao')
+    var n = 0
+document.onload = avaliacoes()
+
+function avaliacoes(){
+    
+        for(let i = 0; i<(listaAvaliacoes._listaAvaliacoes.length -3);i++)
+             localPost.innerHTML += `<div class="avaliacao__box">
+              <img class='avaliacao__img' src="${listaAvaliacoes._listaAvaliacoes[i].imagem}" alt="">
+              <div class="avaliacao__descricao">
+                  <h4 class="avaliacao__nome">${listaAvaliacoes._listaAvaliacoes[i].nome}</h4>
+                  <p class="avaliacao__paragrafo">${listaAvaliacoes._listaAvaliacoes[i].descricao}</p>
+              </div>
+          </div>`
+          }
+          
 
 function proximoAvaliacao(){
-    avaliacaoView.layout02(listaAvaliacoes)
-    document.onload = avaliacaoView.update()
-    i++
-}
+   
+    
+        for(let i = 3; i<listaAvaliacoes._listaAvaliacoes.length;i++)
+             localPost.innerHTML += `<div class="avaliacao__box">
+              <img class='avaliacao__img' src="${listaAvaliacoes._listaAvaliacoes[i].imagem}" alt="">
+              <div class="avaliacao__descricao">
+                  <h4 class="avaliacao__nome">${listaAvaliacoes._listaAvaliacoes[i].nome}</h4>
+                  <p class="avaliacao__paragrafo">${listaAvaliacoes._listaAvaliacoes[i].descricao}</p>
+              </div>
+          </div>`
+          botao.style.visibility = 'hidden'
+          }
+        
+          
+
 
 
 

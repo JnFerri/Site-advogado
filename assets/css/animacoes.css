@@ -16,6 +16,14 @@
    transform: translate3d(0px , 0px , 0px);
 }
 
+.svg__top {
+    rotate: 180deg;
+    width: 100%;
+}
+.svg__bottom {
+    width: 100%;
+}
+
 
 @media (max-width:798px){
     [data-anime="left"]{
