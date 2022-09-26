@@ -6,27 +6,53 @@ var headerFixli = document.querySelector('.header__li')
 
 console.log(imgHeader.value)
 
+window.onload = function headerTop(){
+        if(window.innerWidth < 798){
+            imgHeader.innerHTML = `<img src="assets/imagens/Ferri__1_-removebg-preview.png" class='header__logo' alt="Ferri advocacia">`
+            headerFixul.style.visibility = 'visible'
+        headerFixul.style.position ='relative'
+        } else{
+            imgHeader.innerHTML = `<img src="assets/imagens/Ferri__1_-removebg-preview.png" class='header__logo' alt="Ferri advocacia">`
+            headerFixul.style.visibility = 'visible'
+        headerFixul.style.position ='relative'
+        }
+
+}
+
+
 window.onscroll = function headerFix(){
     if(window.pageYOffset > 0 && window.innerWidth < 798){
     
     header.className ='header__fix'
     whats.style.visibility = 'visible'
-    imgHeader.innerHTML = `<img src="assets/imagens/icones/menu-hamburguer.png" class='header__logo' alt="Ferri advocacia"></img>`
-        
-    } else {
+    imgHeader.innerHTML = `<div id="menuBurguer" onclick="menuBurguer"><img src="assets/imagens/icones/menu-hamburguer.png" class='header__logo' alt="Ferri advocacia"></img><div>`
+    headerFixul.style.visibility = 'hidden'
+        headerFixul.style.position ='absolute'
+}else if(window.pageYOffset > 0 && window.innerWidth > 798) {
+    header.className ='header__fix'
+    whats.style.visibility = 'visible'
+    imgHeader.innerHTML = `<img src="assets/imagens/Ferri__1_-removebg-preview.png" class='header__logo' alt="Ferri advocacia">`
+}
+    
+    else if(window.pageYOffset == 0) {
         
         header.className = 'header'
         whats.style.visibility = 'hidden'
         imgHeader.innerHTML = `<img src="assets/imagens/Ferri__1_-removebg-preview.png" class='header__logo' alt="Ferri advocacia">`
+        
     }
 }
 
-function menuBurguer(){
-    imgHeader.addEventListener("click", function() {
-        headerFixul.style.visibility = 'visible'
-        headerFixli.style.position ='relative'
-    })
-}
+imgHeader.addEventListener('click',function(){if(headerFixul.style.visibility == 'hidden'){
+    headerFixul.style.visibility = 'visible'
+    headerFixul.style.position ='relative'
+} else{
+        headerFixul.style.visibility = 'hidden'
+        headerFixul.style.position ='absolute'
+    }}
+        )
+    
+
 
 
 
